@@ -46,7 +46,7 @@ function showS1() {
     if (index >= list.length) {
       index = 0;
     }
-  },5100);
+  },5500);
 }
 
 // 3. 监听函数动画与导航栏高亮
