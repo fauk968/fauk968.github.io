@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+//adapter
+.adapterFun(@index) when(@index <= length(@deviceWidthArr)) {
+  @media (min-width: extract(@deviceWidthArr,@index)) {
+    html {
+      font-size:  extract(@deviceWidthArr,@index) / @psdWidth * @baseSize;
+    }
+  }
+
+  .adapterFun(@index+1);
+}

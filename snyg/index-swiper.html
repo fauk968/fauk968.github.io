@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>Title</title>
+
+  <!--&lt;!&ndash;引入less文件&ndash;&gt;-->
+  <!--<link rel="stylesheet" type="text/less" href="less/main.less">-->
+  <!--&lt;!&ndash;引入less.js来使浏览器正常使用less文件&ndash;&gt;-->
+  <!--<script src="assets/less/less.js"></script>-->
+  <link rel="stylesheet" href="less/main.css">
+  <!--引入swiper插件核心样式-->
+  <link rel="stylesheet" href="assets/swiper/css/swiper.css">
+</head>
+<body>
+<div class="container">
+  <!--头部-->
+  <header class="headwrap">
+    <div class="head">
+      <a href="#" class="classify"></a>
+      <form action="#">
+        <span class="icon-search"></span>
+        <input type="search" placeholder="美力女神节满199减100">
+      </form>
+      <a href="#" class="login">
+        登录
+      </a>
+    </div>
+  </header>
+  <!--轮播图-->
+  <style>
+    /*改写样式*/
+    .swiper-container {
+      width: 100%;
+    }
+    .swiper-container img {
+      width: 100%;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      text-align: center;
+      -webkit-transition: 300ms opacity;
+      -o-transition: 300ms opacity;
+      transition: 300ms opacity;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      z-index: 10;
+    }
+    .swiper-pagination.swiper-pagination-hidden {
+      opacity: 0;
+    }
+    /* Common Styles */
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+    }
+    /* Bullets */
+    .swiper-pagination-bullets-dynamic {
+      overflow: hidden;
+      font-size: 0;
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+      -webkit-transform: scale(0.33);
+      -ms-transform: scale(0.33);
+      transform: scale(0.33);
+      position: relative;
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+      -webkit-transform: scale(0.66);
+      -ms-transform: scale(0.66);
+      transform: scale(0.66);
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+      -webkit-transform: scale(0.33);
+      -ms-transform: scale(0.33);
+      transform: scale(0.33);
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+      -webkit-transform: scale(0.66);
+      -ms-transform: scale(0.66);
+      transform: scale(0.66);
+    }
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+      -webkit-transform: scale(0.33);
+      -ms-transform: scale(0.33);
+      transform: scale(0.33);
+    }
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 5px;
+      display: inline-block;
+      border-radius: 6px;
+      background: rgba(255,255,255,.4);
+      opacity: 1;
+    }
+    button.swiper-pagination-bullet {
+      border: none;
+      margin: 0;
+      padding: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+      cursor: pointer;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #fff;
+      width: 12px;
+    }
+
+  </style>
+  <div class="swiper-container">
+    <ul class="clearfix swiper-wrapper">
+      <li class="swiper-slide"><a href="#"><img src="images/banner1.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner2.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner3.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner4.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner5.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner6.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner7.jpg"></a></li>
+      <li class="swiper-slide"><a href="#"><img src="images/banner8.jpg"></a></li>
+    </ul>
+    <ul class="clearfix swiper-pagination">
+      <li class="now"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!--导航-->
+  <nav class="nav">
+    <ul class="clearfix">
+      <li><a href="#"><img src="images/nav1.png"><p>爆款手机</p></a></li>
+      <li><a href="#"><img src="images/nav2.png"><p>苏宁超市</p></a></li>
+      <li><a href="#"><img src="images/nav3.png"><p>生活家电</p></a></li>
+      <li><a href="#"><img src="images/nav4.png"><p>苏宁生鲜</p></a></li>
+      <li><a href="#"><img src="images/nav5.png"><p>母婴玩具</p></a></li>
+      <li><a href="#"><img src="images/nav6.png"><p>限时抢购</p></a></li>
+      <li><a href="#"><img src="images/nav7.png"><p>赚钱</p></a></li>
+      <li><a href="#"><img src="images/nav8.png"><p>苏宁拼购</p></a></li>
+      <li><a href="#"><img src="images/nav9.png"><p>苏宁家电</p></a></li>
+      <li><a href="#"><img src="images/nav10.png"><p>签到有礼</p></a></li>
+    </ul>
+  </nav>
+  <!--领劵-->
+  <div class="discounts">
+    <a href="#"><img src="images/juan1.gif"></a>
+    <a href="#"><img src="images/juan2.gif"></a>
+    <a href="#"><img src="images/juan3.gif"></a>
+  </div>
+  <!--脚部-->
+  <footer class="footer">
+      <ul class="foot_content">
+        <li>
+          <a href="#">
+            <img src="images/bottom1.png">
+            <p>猜你喜欢</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/bottom2.png">
+            <p>分类</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/bottom3.png">
+            <p>必抢清单</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/bottom4.png">
+            <p>购物车</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/bottom5.png">
+            <p>我的易购</p>
+          </a>
+        </li>
+      </ul>
+  </footer>
+  </div>
+<!--zepto核心模块-->
+<script src="assets/zepto/zepto.min.js"></script>
+<!--引入seletor模块   支持 jQuery CSS 表达式 实用功能-->
+<script src="assets/zepto/selector.js"></script>
+<!--引入动画模块-->
+<script src="assets/zepto/fx.js"></script>
+<!--引入手势事件模块-->
+<script src="assets/zepto/touch.js"></script>
+<!--引入swiper插件核心js-->
+<script src="assets/swiper/js/swiper.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: true,//可选选项，自动滑动
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+  })
+</script>
+</body>
+</html>

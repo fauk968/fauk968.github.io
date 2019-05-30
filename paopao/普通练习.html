@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>include-demo</title>
+  <script src="./lib/art-template/template-web.js"></script>
+</head>
+
+<body>
+<div id="content"></div>
+
+<!--这是模板-->
+<script id="wrap" type="text/html">
+  <h1>{{ title }}</h1>
+  <ul>
+    {{ each list }}
+    <li>索引为{{ $index }} ，值为{{ $value }}</li>
+    {{ /each }}
+  </ul>
+</script>
+
+
+<script>
+  var data = {
+    title: 'hello world',
+    list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+  };
+  var html = template('wrap', data);
+  document.getElementById('content').innerHTML = html;
+</script>
+
+
+</body>
+</html>

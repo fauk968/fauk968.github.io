@@ -1,0 +1,82 @@
+/*这里是初始化代码*/
+body, html {
+    padding: 0;
+    background-color: #fafafa;
+    font-family: "Microsoft YaHei", sans-serif;
+    position: relative;
+}
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
+.h2 {
+    color: #2c3e50;
+}
+.section {
+    min-height: 700px;
+    padding: 120px 0;
+    /*position: relative;*/
+    /*height: 100vh;*/
+    /*padding-top: 70px;*/
+    /*background-origin: content-box;*/
+    /*background-clip: content-box;*/
+}
+
+/*清除浮动代码*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*小横线*/
+.line {
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    width: 100px;
+    background-color: #E87E04;
+    margin-bottom: 30px;
+    transform: scaleX(0.3);
+    transition: all 0.5s;
+}
+/*动画类*/
+.fadein1 {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: all 0.5s !important;
+}
+.fadein2 {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: all 0.5s 0.5s !important;
+}
+.fadein3 {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: all 0.5s 1s !important;
+}
+.ani1 {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.scale {
+    transform: scaleX(1);
+}

@@ -1,0 +1,262 @@
+@charset "utf-8";
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 53.33333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 14px;
+  font-family: microsoft Yahei, sans-serif;
+  background: #f01d47 none repeat scroll 0% 0%;
+}
+input {
+  border: none;
+  outline: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.headwrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.headwrap .head {
+  position: relative;
+  height: 0.88rem;
+  padding: 0 0.88rem;
+  margin: 0 auto;
+  max-width: 750px;
+}
+.headwrap .head a {
+  position: absolute;
+  top: 0;
+  width: 0.88rem;
+  height: 0.88rem;
+}
+.headwrap .head .classify {
+  left: 0;
+  background: url("../images/fenlei.png") no-repeat center / 0.44rem 0.7rem;
+}
+.headwrap .head .login {
+  right: 0;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.24rem;
+}
+.headwrap .head form {
+  width: 100%;
+  position: relative;
+}
+.headwrap .head form .icon-search {
+  position: absolute;
+  top: 0.26rem;
+  left: 0.26rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  background: url("../images/search.png") no-repeat center / 0.36rem 0.36rem;
+}
+.headwrap .head form input {
+  width: 100%;
+  height: 0.6rem;
+  margin-top: 0.14rem;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+  padding-left: 0.72rem;
+}
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner ul:first-of-type {
+  transform: translateX(-10%);
+  width: 1000%;
+}
+.banner ul:first-of-type li {
+  width: 10%;
+  float: left;
+}
+.banner ul:first-of-type li a {
+  display: block;
+  width: 100%;
+}
+.banner ul:first-of-type li a img {
+  width: 100%;
+}
+.banner ul:last-of-type {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner ul:last-of-type li {
+  width: 0.08rem;
+  height: 0.05rem;
+  border-radius: 0.07rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  float: left;
+  margin-right: 0.2rem;
+}
+.banner ul:last-of-type li.now {
+  width: 0.12rem;
+  background-color: #fff;
+}
+.nav {
+  width: 100%;
+  padding: 0.2rem 0;
+  background: url("../images/navbg.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+.nav ul {
+  width: 100%;
+}
+.nav ul li {
+  width: 20%;
+  float: left;
+  padding: 0.13rem 0;
+}
+.nav ul li a img {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  margin: 0 auto;
+}
+.nav ul li a p {
+  text-align: center;
+  font-size: 0.24rem;
+}
+.discounts {
+  width: 100%;
+  height: 3.96rem;
+}
+.discounts a {
+  display: block;
+  float: left;
+  width: 33.33333333%;
+}
+.discounts a img {
+  width: 100%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+}
+.footer .foot_content {
+  max-width: 750px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0.05rem 0;
+  background-color: #fff;
+}
+.footer .foot_content li {
+  float: left;
+  width: 20%;
+}
+.footer .foot_content li a {
+  display: block;
+}
+.footer .foot_content li a img {
+  width: 0.56rem;
+  height: 0.56rem;
+  display: block;
+  margin: 0 auto;
+}
+.footer .foot_content li a p {
+  text-align: center;
+  color: #666;
+  font-size: 0.24rem;
+}
+.footer .foot_content li:first-of-type p {
+  color: #ff9000;
+}
+/*# sourceMappingURL=main.css.map */

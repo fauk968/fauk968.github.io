@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+//这个模块用来适配主流设备
+//假如：750px的psd图    基准值为50px
+//那么 375px的设备   基准值就为 375px/750px * 50px
+
+//我们需要适配的设备宽度有：320px,360px,375px,384px,400px,414px,424px,480px,540px,640px,720px,750px
+//每一种设备都有对应的font-szie大小
+
+//@media (min-width: 320px) {
+//  html {
+//    font-size:  320px / 750px * 50px;
+//  }
+//}
+//将上面的媒体查询封装为函数
+
+////adapter var     适配变量
+////设计稿的宽度
+//@psdWidth : 750;
+////基准值
+//@baseSize : 50;
+////适配的设备宽度
+//@deviceWidthArr : 320px,360px,375px,384px,400px,414px,424px,480px,540px,640px,720px,750px;
+
+
+//@currentWidth  形参 当前屏幕宽度
+//.adapterFun (@currentWidth:750px) {
+//  @media (min-width: @currentWidth) {
+////    html {
+////      font-size:  @currentWidth / @psdWidth * @baseSize;
+////    }
+////  }
+//}
+
+//调用函数
+//.adapterFun(320px);
+
+//搞一个数组装我们需要适配的机型宽度，再进行遍历数组，这样会更好维护
+//1.length(@deviceWidthArr)  获取数组的长度
+//2.extract(@deviceWidthArr,1)获取数组中的第一项
+
+//.adapterFun(@index) when(@index <= length(@deviceWidthArr)) {}   当索引@index小于等于12时才执行函数
+
+// @index 为当前数据项
+//.adapterFun(@index) when(@index <= length(@deviceWidthArr)) {
+//  @media (min-width: extract(@deviceWidthArr,@index)) {
+//    html {
+//      font-size:  extract(@deviceWidthArr,@index) / @psdWidth * @baseSize;
+//    }
+//  }
+//
+//  //每次调用索引加一
+//  //自调用   类似于递归
+//  .adapterFun(@index+1);
+//}
+
+//调用函数
+.adapterFun(1);

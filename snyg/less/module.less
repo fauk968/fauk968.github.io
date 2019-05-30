@@ -1,0 +1,223 @@
+@charset "utf-8";
+// reset.css   重置样式
+*,::before,::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  //设置重置字体大小，不然会继承HTML的字体大小
+  font-size: 14px;
+  font-family: microsoft Yahei, sans-serif;
+  background: rgb(240, 29, 71) none repeat scroll 0% 0%;;
+}
+input {
+  border: none;
+  outline: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul,li {
+  list-style: none;
+}
+// common.css
+//清除浮动
+.clearfix:after{
+  content:".";
+  display:block;
+  height:0;
+  visibility:hidden;
+  clear:both;
+}
+
+
+// module.css
+
+//版心
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  background-color: rgba(255,255,255,0);
+}
+
+//头部开始
+.headwrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  .head {
+    position: relative;
+    height: 88rem/100;
+    padding: 0 88rem/100;
+    margin: 0 auto;
+    max-width: 750px;
+    a {
+      position: absolute;
+      top: 0;
+      width: 88rem/100;
+      height: 88rem/100;
+    }
+    .classify {
+      left: 0;
+      background: url("../images/fenlei.png") no-repeat center / 44rem/100 70rem/100;
+    }
+    .login {
+      right: 0;
+      line-height: 88rem/100;
+      text-align: center;
+      font-size: 24rem/100;
+    }
+
+    form {
+      width: 100%;
+      position: relative;
+      .icon-search {
+        position: absolute;
+        top: 26rem/100;
+        left: 26rem/100;
+        width: 36rem/100;
+        height: 36rem/100;
+        background: url("../images/search.png") no-repeat center / 36rem/100 36rem/100;
+      }
+      input {
+        width: 100%;
+        height: 60rem/100;
+        margin-top: 14rem/100;
+        border-radius: 30rem/100;
+        font-size: 24rem/100;
+        padding-left: 72rem/100;
+      }
+    }
+  }
+}
+
+//轮播图
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  ul:first-of-type {
+    transform: translateX(-100%/10);
+    width: 10 * 100%;
+    li {
+      width: 100%/10;
+      float: left;
+      a {
+        display: block;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  ul:last-of-type {
+    position: absolute;
+    bottom: 30rem/100;
+    left: 50%;
+    transform: translateX(-50%);
+    li {
+      width: 8rem/100;
+      height: 5rem/100;
+      border-radius: 7rem/100;
+      background-color: rgba(255,255,255,.4);
+      float: left;
+      margin-right: 20rem/100;
+      &.now {
+        width: 12rem/100;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+//导航模块
+.nav {
+  width: 100%;
+  padding: 20rem/100 0;
+  background: url("../images/navbg.jpg") no-repeat center;
+  background-size: 100% 100%;
+  ul {
+    width: 100%;
+    li {
+      width: 20%;
+      float: left;
+      padding: 13rem/100 0;
+      a {
+        img {
+          width: 120rem/100;
+          height: 120rem/100;
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          text-align: center;
+          font-size: 24rem/100;
+        }
+      }
+    }
+  }
+}
+
+//优惠劵
+.discounts {
+  width: 100%;
+  height: 396rem/100;
+  a {
+    display: block;
+    float: left;
+    width: 100%/3;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//脚部tab
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rem/100;
+  .foot_content {
+    max-width: 750px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    height: 100%;
+    padding: 5rem/100 0;
+    background-color: #fff;
+
+    li {
+      float: left;
+      width: 20%;
+      a {
+        display: block;
+        img {
+          width: 56rem/100;
+          height: 56rem/100;
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          text-align: center;
+          color: #666;
+          font-size: 24rem/100;
+        }
+      }
+      &:first-of-type p {
+        color: #ff9000;
+      }
+    }
+  }
+}
