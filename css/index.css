@@ -211,15 +211,18 @@
     background-color: transparent;
 }
 .resume-nav .navbar-toggle {
-    margin-top: 18px;
+    margin-top: 16px;
     border-color: #ddd;
+    padding: 10px;
+    border: none;
 }
 .resume-nav .navbar-toggle:hover,
 .resume-nav .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: transparent;
 }
-.resume-nav .navbar-toggle .icon-bar {
-    background-color: #888;
+.resume-nav .navbar-toggle span {
+    color: #fff;
+    font-size: 26px;
 }
 .resume-nav .navbar-collapse,
 .resume-nav .navbar-form {

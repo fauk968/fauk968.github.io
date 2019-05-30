@@ -105,13 +105,30 @@ function scrollWatch() {
 
 // 4. 点击导航页面滚动到该位置
 function clickNav() {
-
+  var flag = false;
   // 导航栏的点击
   $('.navbar-right li').on('click',function () {
     var activeIndex = $(this).index();
     var height  = $('.section').eq(activeIndex).offset().top - 69;
     ani(height);
+
+    // 收起导航
+    $('.navbar-collapse').slideUp(300);
+    flag = false;
   });
+
+  // 这里切换移动端菜单按钮
+  $('.resume-nav .navbar-toggle').on('click',function () {
+    if (flag) {
+      $('.navbar-collapse').slideUp(300);
+      flag = false;
+    } else {
+      $('.navbar-collapse').slideDown(300);
+      flag = true;
+    }
+  });
+
+
 
   // 首页关于我和我的作品的点击
   $('.s1-content span').on('click',function () {
