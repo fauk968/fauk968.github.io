@@ -564,7 +564,7 @@ fieldset[disabled] .resume-nav .btn-link:focus {
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+    min-height: 95vh;
 }
 #section7 .container {
     margin-top: 50px;
