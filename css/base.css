@@ -27,12 +27,13 @@ a:hover {
 .section {
     min-height: 700px;
     padding: 120px 0;
-    /*position: relative;*/
-    /*height: 100vh;*/
-    /*padding-top: 70px;*/
-    /*background-origin: content-box;*/
-    /*background-clip: content-box;*/
 }
+@media screen and (max-width: 500px){
+    .section {
+        max-height: 110vh;
+    }
+}
+
 
 /*清除浮动代码*/
 .clearfix:before,

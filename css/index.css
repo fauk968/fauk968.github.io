@@ -20,22 +20,22 @@
     display: none;
 }
 .bg-wrap .bg-item:nth-of-type(1) {
-    background: url(../images/bg1.jpg) 0 0 no-repeat;
+    background: url(../images/bg1.jpg) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .bg-wrap .bg-item:nth-of-type(2) {
-    background: url(../images/fc.jpg) 0 0 no-repeat;
+    background: url(../images/fc.jpg) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .bg-wrap .bg-item:nth-of-type(3) {
-    background: url(../images/bg3.jpg) 0 0 no-repeat;
+    background: url(../images/bg3.jpg) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
 }
 .bg-wrap .bg-item:nth-of-type(4) {
-    background: url(../images/bg4.jpg) 0 0 no-repeat;
+    background: url(../images/bg4.jpg) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -296,7 +296,8 @@ fieldset[disabled] .resume-nav .btn-link:focus {
 }
 /*第三部分*/
 #section3 {
-    background: url("../images/services-bg.jpg") no-repeat center center;
+    background: url("../images/services-bg.jpg") no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
@@ -386,6 +387,10 @@ fieldset[disabled] .resume-nav .btn-link:focus {
         opacity: 1;
         background-color: rgba(0,0,0,.6);
         font-size: 14px;
+        overflow: scroll;
+    }
+    .prod-wrap > div > .wrap a p { 
+        padding: 0 5px;
     }
     .prod-wrap > div > .wrap a h4 {
         font-size: 16px;
@@ -396,7 +401,7 @@ fieldset[disabled] .resume-nav .btn-link:focus {
 }
 /*第五部分*/
 #section5 {
-    background: url('../images/skills-bg.jpg') no-repeat center;
+    background: url('../images/skills-bg.jpg') no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
@@ -560,10 +565,9 @@ fieldset[disabled] .resume-nav .btn-link:focus {
 }
 /*第七部分*/
 #section7 {
-    background: url("../images/achivements-bg.jpg") no-repeat center;
+    background: url("../images/achivements-bg.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
     min-height: 95vh;
 }
 #section7 .container {
