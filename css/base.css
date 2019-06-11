@@ -28,11 +28,7 @@ a:hover {
     min-height: 700px;
     padding: 120px 0;
 }
-@media screen and (max-width: 500px){
-    .section {
-        max-height: 110vh;
-    }
-}
+
 
 
 /*清除浮动代码*/

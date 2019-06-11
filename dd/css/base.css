@@ -310,6 +310,7 @@ h1{
 .footer-warp span{
     font-size: 12px;
     margin: 0 17px 0 19px;
+    width: 100%;
 }
 .footer-warp a{
     color: #8c8c8c;
@@ -322,8 +323,8 @@ h1{
     height: 79px;
     border-top: 2px solid #ff2832;
     border-bottom: 1px solid #f3f3f3;
-    padding-left: 299px;
     background-color: #fafafa;
+    text-align: center;
 }
 .foot-pic a{
     display: block;
@@ -339,6 +340,10 @@ h1{
     background: url("../images/footer_bg.png") no-repeat 0 0;
     float: left;
 }
+.foot-pic div {
+    display: inline-block;
+    overflow: hidden;
+}
 .foot-pic div:nth-child(2) span{
     background-position: 0px -52px;
 }
@@ -353,12 +358,14 @@ h1{
 .shop-guide{
     height: 128px;
     border-bottom: 1px solid #f3f3f3;
-    padding: 42px 0 0 300px;
+    padding-top: 42px;
+    text-align: center;
 }
 .shop-guide dl{
     width: 160px;
     text-align: center;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 .shop-guide dl dt{
     font-size: 14px;
@@ -397,12 +404,12 @@ h1{
     color: #ff2832;
 }
 .footer-ico{
-    margin: 21px 0 39px 278px;
+    margin: 21px 0 39px;
+    text-align: center;
 }
 .footer-ico a{
     margin: 0 28px;
-    display: block;
-    float: left;
+    display: inline-block;
 }
 .footer-ico a img{
     display: block;

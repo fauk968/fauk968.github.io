@@ -4,7 +4,7 @@
 }
 #section1 .bg-wrap {
     height: 100vh;
-    background: url(../images/bg2.jpg) 0 0 no-repeat;
+    background: url(../images/bg2.jpg) no-repeat 0 0;
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
@@ -182,7 +182,7 @@
 }
 .resume-nav .navbar-brand:hover,
 .resume-nav .navbar-brand:focus {
-    color: #5e5e5e;
+    color: #fff;
     background-color: transparent;
 }
 .resume-nav .navbar-text {
@@ -381,7 +381,7 @@ fieldset[disabled] .resume-nav .btn-link:focus {
 .prod-wrap > div > .wrap a > .search{
     width: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
     .prod-wrap > div > .wrap a {
         padding: 5px;
         opacity: 1;
@@ -565,7 +565,7 @@ fieldset[disabled] .resume-nav .btn-link:focus {
 }
 /*第七部分*/
 #section7 {
-    background: url("../images/achivements-bg.jpg") no-repeat fixed center center;
+    background: url("../images/achivements-bg.jpg") no-repeat fixed center;
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 95vh;
