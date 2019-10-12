@@ -4,6 +4,7 @@ body, html {
     background-color: #fafafa;
     font-family: "Microsoft YaHei", sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 ul,li {
     padding: 0;
@@ -27,6 +28,9 @@ a:hover {
 .section {
     min-height: 700px;
     padding: 120px 0;
+}
+.butterfly_container {
+    z-index: 9999;
 }
 
 

@@ -1,6 +1,7 @@
 /*第一部分*/
 .content #section1 {
     min-height: auto;
+    position: relative;
 }
 #section1 .bg-wrap {
     height: 100vh;
