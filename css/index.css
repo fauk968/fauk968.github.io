@@ -212,18 +212,15 @@
     background-color: transparent;
 }
 .resume-nav .navbar-toggle {
-    margin-top: 16px;
+    margin-bottom: 0px;
+    margin-top: 6px;
     border-color: #ddd;
     padding: 10px;
-    border: none;
+    border: none; 
 }
-.resume-nav .navbar-toggle:hover,
-.resume-nav .navbar-toggle:focus {
-    background-color: transparent;
-}
-.resume-nav .navbar-toggle span {
-    color: #fff;
-    font-size: 26px;
+/* 重置切换按钮样式 */
+.resume-nav .navbar-toggle:hover, .resume-nav .navbar-toggle:focus {
+    background-color: transparent !important;
 }
 .resume-nav .navbar-collapse,
 .resume-nav .navbar-form {

@@ -7,8 +7,11 @@ $(function () {
   scrollWatch();
   // 4. 点击导航页面滚动到该位置
   clickNav();
-
+  // 5. 开始进度条加载，等onload时关闭
+  NProgress.start();
 });
+window.onload = function () {NProgress.done();}
+
 // 1. 滑动到一定高度导航栏变固定
 function navFiex() {
   // 注册滚动事件
@@ -114,16 +117,22 @@ function clickNav() {
 
     // 收起导航
     $('.navbar-collapse').slideUp(300);
+    $('.resume-nav .navbar-toggle').removeClass('is-active');
     flag = false;
   });
 
   // 这里切换移动端菜单按钮
   $('.resume-nav .navbar-toggle').on('click',function () {
+
     if (flag) {
       $('.navbar-collapse').slideUp(300);
+      $(this).removeClass('is-active');
+      
       flag = false;
     } else {
       $('.navbar-collapse').slideDown(300);
+      $(this).addClass('is-active');
+
       flag = true;
     }
   });
